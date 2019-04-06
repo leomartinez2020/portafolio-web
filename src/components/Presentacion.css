@@ -1,0 +1,127 @@
+
+h1.texto-nombre {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+
+/* Animación Desarollador */
+span#developer {
+  display: inline-block;
+  width: 5rem;
+}
+
+span#developer::before {
+  content: "Python ";
+  animation-name: animate;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes animate {
+  0% {
+      content: "R "
+  }
+  9% {
+      content: "Re "
+  }
+  18% {
+      content: "Rea "
+  }
+  27% {
+      content: "Reac "
+  }
+  36% {
+      content: "React "
+  }
+  45% {
+      content: "P ";
+  }
+  54% {
+      content: "Py ";
+  }
+  63% {
+      content: "Pyt ";
+  }
+  72% {
+      content: "Pyth ";
+  }
+  81% {
+      content: "Pytho ";
+  }
+  90% {
+      content: "Python ";
+  }
+}
+
+.text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.presentacion-wrapper {
+  background: url("../img/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.presentacion {
+  background: #fff;
+  height: 600px;
+  opacity: 0.6;
+  padding: 2px;
+  position: relative;
+  text-align: center;
+}
+
+.presentacion h2 {
+  color: #72532b;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+
+/* Portafolio link */
+.portafolio-link {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.p-link {
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+/* Work Done */
+.portafolio {
+  margin-top: 5rem;
+}
+
+.portafolio-titulo {
+  text-align: center;
+}
+
+.work p {
+  padding: 16px;
+}
+
+.trabajos-hechos {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto;
+}
+
+.snippet {
+  background: #8DACD4;
+  border: 2px solid #8DACD4;
+  border-radius: 12px;
+  margin: auto;
+  max-width: 400px;
+  height: 44vh;;
+}
+
