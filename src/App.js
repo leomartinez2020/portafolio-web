@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Acerca from './components/Acerca';
 import Contacto from './components/Contacto';
-//import Header from './components/Header';
+import Header from './components/Header';
 import Footer from './components/Footer';
 import Presentacion from './components/Presentacion';
 
@@ -13,14 +13,9 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <div className="topnav" id="myTopnav">
-            <NavLink exact to="/" activeClassName="active">Inicio</NavLink>
-            <NavLink to="/acerca" activeClassName="active">Acerca</NavLink>
-            <NavLink to="/contacto" activeClassName="active">Contacto</NavLink>
-            <a href="#TODO" className="icon">
-              <i className="fa fa-bars"></i>
-            </a>
-          </div>
+
+          <Header />
+
           <Route exact path="/" component={Presentacion} />
           <Route exact path="/acerca" component={Acerca} />
           <Route exact path="/contacto" component={Contacto} />
