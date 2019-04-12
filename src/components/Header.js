@@ -8,9 +8,9 @@ const Header = () => {
   return (
     <React.Fragment>
       <div className={topnavState ? 'topnav' : 'topnav responsive'} id="myTopnav">
-        <NavLink to="/" className="active">Inicio</NavLink>
-        <NavLink to="acerca.html">Acerca</NavLink>
-        <NavLink to="contacto.html">Contacto</NavLink>
+        <NavLink exact to="/" activeClassName="active">Inicio</NavLink>
+        <NavLink to="/acerca" activeClassName="active">Acerca</NavLink>
+        <NavLink to="/contacto" activeClassName="active">Contacto</NavLink>
         <a href={"javascript:void(0)"}
           className="icon" onClick={() => respTopnav(!topnavState)}>
           <i className="fa fa-bars"></i>
