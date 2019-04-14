@@ -1,0 +1,20 @@
+.contacto dt {
+  display: inline;
+}
+
+.contacto a {
+  color: #8DACD4;
+  text-decoration: underline;
+}
+
+.contacto dd {
+  color: #8DACD4;
+  display: inline;
+  margin: 0 0 0 12px;
+  font-weight: bold;
+}
+
+.container dd::after {
+  content: "\A";
+  white-space: pre;
+}
