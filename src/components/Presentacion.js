@@ -1,6 +1,22 @@
 import React from 'react';
 import './Presentacion.css';
 
+const WorkDone = () => {
+  return (
+    <div className="work work-1">
+      <div className="snippet snippet-1">
+
+      </div>
+      <p>
+        Esta aplicación muestra el mapa de los terremotos ocurridos
+        en la última semana a nivel mundial. Los datos se obtienen de la api
+        del servicio geológico de Estados Unidos. La aplicación está alojada
+        en Firebase hosting y está creada en React.
+      </p>
+    </div>
+  )
+}
+
 const Presentacion = () => {
   return (
     <React.Fragment>
@@ -16,30 +32,13 @@ const Presentacion = () => {
     <div className="container">        
         <div className="portafolio">
             <div className="portafolio-titulo">
-                <h1>Portafolio de Trabajos</h1>
+                <h1>Portafolio de Proyectos</h1>
             </div>
             <div className="trabajos-hechos" id="work-done">
-                <div className="work work-1">
-                    <div className="snippet snippet-1"></div>
-                    <p>
-                      Esta aplicación muestra el mapa de los terremotos ocurridos
-                      en la última semana a nivel mundial. Los datos se obtienen de la api
-                      del servicio geológico de Estados Unidos. La aplicación está alojada
-                      en Firebase hosting y está creada en React.
-                    </p>
-                </div>
-                <div className="work work-2">
-                    <div className="snippet snippet-2"></div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ipsa corrupti, molestias perferendis quo corporis quidem accusantium eaque eum necessitatibus quibusdam laborum! Error sequi magnam temporibus aliquam, quo nostrum ratione?</p>
-                </div>
-                <div className="work work-3">
-                    <div className="snippet snippet-3"></div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ipsa corrupti, molestias perferendis quo corporis quidem accusantium eaque eum necessitatibus quibusdam laborum! Error sequi magnam temporibus aliquam, quo nostrum ratione?</p>
-                </div>
-                <div className="work work-4">
-                    <div className="snippet snippet-4"></div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ipsa corrupti, molestias perferendis quo corporis quidem accusantium eaque eum necessitatibus quibusdam laborum! Error sequi magnam temporibus aliquam, quo nostrum ratione?</p>
-                </div>
+                <WorkDone />
+                <WorkDone />
+                <WorkDone />
+                <WorkDone />
             </div>
         </div>
     </div>
