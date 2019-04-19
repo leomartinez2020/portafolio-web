@@ -16,7 +16,7 @@ const Contacto = () => {
         <dd> <i className="fab fa-twitter"></i> <a href="https://twitter.com/pythonista100">Pythonista100</a></dd>
 
         <dt>Ubicación:</dt>
-        <dd> <i class="fas fa-map-marker-alt"></i> Barranquilla</dd>
+        <dd> <i className="fas fa-map-marker-alt"></i> Barranquilla</dd>
         
       </dl>
     </div>
