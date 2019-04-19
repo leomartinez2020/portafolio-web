@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Acerca from './components/Acerca';
+import Blog from './components/Blog';
 import Contacto from './components/Contacto';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -19,6 +20,7 @@ class App extends Component {
           <Route exact path="/" component={Presentacion} />
           <Route exact path="/acerca" component={Acerca} />
           <Route exact path="/contacto" component={Contacto} />
+          <Route exact path="/blog" component={Blog} />
         </Router>
         <Footer />
       </div>
