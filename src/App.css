@@ -13,6 +13,10 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+.App, #root {
+  height: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -23,9 +27,20 @@ p {
 
 .container {
   width: 80%;
-  margin: auto;
-  min-height: calc(100vh - 188px);
+  margin: 0 auto -164px auto;
+  min-height: 100%;
 }
+
+/* This is to create sticky footer */
+.container::after {
+  content: "";
+  display: block;
+  height: 164px;
+}
+
+.container::after {
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #8DACD4;
