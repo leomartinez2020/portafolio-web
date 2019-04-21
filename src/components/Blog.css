@@ -1,0 +1,23 @@
+p {
+  line-height: 1.8;
+}
+
+h1, h2 {
+  margin-top: 2em;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 3px solid #979797;
+  padding-left: 12px;
+}
+
+blockquote::before {
+  content: open-quote;
+  font-weight: bold;
+}
+
+blockquote::after {
+  content: close-quote;
+  font-weight: bold;
+}
