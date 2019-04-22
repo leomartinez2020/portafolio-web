@@ -107,3 +107,8 @@ a.active {
     grid-template-columns: auto;
   }
 }
+
+/**** Blog section CSS **/
+.blog, .contacto {
+  width: 60%;
+}
