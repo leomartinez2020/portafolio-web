@@ -5,20 +5,16 @@ const Contacto = () => {
   return (
     <div className="container contacto">
       <h1>Contacto</h1>
-      <dl>
-        <dt>Correo:</dt>
-        <dd> <i className="far fa-envelope"></i> <a href="mailto:leonardomartinez2019@yahoo.com">leonardomartinez2019@yahoo.com</a></dd>
+      <div>
+        <p> <i className="far fa-envelope"></i> <a href="mailto:leonardomartinez2019@yahoo.com">leonardomartinez2019@yahoo.com</a></p>
 
-        <dt>Teléfono:</dt>
-        <dd> <i className="fas fa-phone"></i> 3107489655</dd>
+        <p> <i className="fas fa-phone"></i> 3107489655</p>
 
-        <dt>Twitter:</dt>
-        <dd> <i className="fab fa-twitter"></i> <a href="https://twitter.com/pythonista100">Pythonista100</a></dd>
+        <p> <i className="fab fa-twitter"></i> <a href="https://twitter.com/pythonista100">Pythonista100</a></p>
 
-        <dt>Ubicación:</dt>
-        <dd> <i className="fas fa-map-marker-alt"></i> Barranquilla</dd>
+        <p> <i className="fas fa-map-marker-alt"></i> Barranquilla</p>
         
-      </dl>
+      </div>
     </div>
   )
 }
