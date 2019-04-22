@@ -1,17 +1,51 @@
 import React from 'react';
 import './Presentacion.css';
 
-const WorkDone = () => {
+const portafolioData = [
+  {
+    titulo: "Mapa de terremotos",
+    descripcion: "Muestra los lugares a nivel mundial donde ocurrieron terremotos en la últimas 48 horas",
+    herramientas: ["React", "Google Maps", "Api de USGS", "Firebase"],
+    imgUrl: "",
+    siteUrl: "",
+    githubUrl: ""
+  },
+  {
+    titulo: "Blog Personal",
+    descripcion: "Blog creado con Jekyll dedicado a Python y otras tecnologías",
+    herramientas: ["Jekyll", "Github Pages"],
+    imgUrl: "",
+    siteUrl: "",
+    githubUrl: ""
+  },
+  {
+    titulo: "Sitio con autenticación para publicar entradas de blog",
+    descripcion: "Construido con Flask, permite al usuario autenticarse y crear contenido",
+    herramientas: ["Flask", "MySQL", "SQLalchemy"],
+    imgUrl: "",
+    siteUrl: "",
+    githubUrl: ""
+  },
+  {
+    titulo: "",
+    descripcion: "",
+    herramientas: ["", "", ""],
+    imgUrl: "",
+    siteUrl: "",
+    githubUrl: ""
+  },
+];
+
+const WorkDone = (props) => {
   return (
     <div className="work work-1">
       <div className="snippet snippet-1">
 
       </div>
       <p>
-        Esta aplicación muestra el mapa de los terremotos ocurridos
-        en la última semana a nivel mundial. Los datos se obtienen de la api
-        del servicio geológico de Estados Unidos. La aplicación está alojada
-        en Firebase hosting y está creada en React.
+        {
+          props.dato.descripcion
+        }
       </p>
     </div>
   )
@@ -35,10 +69,7 @@ const Presentacion = () => {
                 <h1>Portafolio de Proyectos</h1>
             </div>
             <div className="trabajos-hechos" id="work-done">
-                <WorkDone />
-                <WorkDone />
-                <WorkDone />
-                <WorkDone />
+                {portafolioData.map( dato => <WorkDone dato={dato} />)}
             </div>
         </div>
     </div>
