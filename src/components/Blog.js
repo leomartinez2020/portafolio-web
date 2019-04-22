@@ -82,13 +82,12 @@ const Blog = () => {
       in parallel, optimizing or minimizing CSS, Web fonts, and layout and using GPU 
       for animations and taking advantage of  optimized downloads.
       </p>
-      <p>This is how the AMP project starts describing their JS approach:
+      <p>This is how the AMP project starts describing their JS approach:</p>
       <blockquote>
       JavaScript is powerful, it can modify just about every aspect of the page, but it 
       can also block DOM construction and delay page rendering. To keep JavaScript 
       from delaying page rendering, AMP allows only asynchronous JavaScript.
       </blockquote>
-      </p>
       <p>
       To wrap up, for content rich pages SSR is a great option, whereas sigle-page
       applications are well suited for functionality and interactivity. 

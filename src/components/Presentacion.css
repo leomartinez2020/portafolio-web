@@ -5,56 +5,6 @@ h1.texto-nombre {
   margin-bottom: 0;
 }
 
-
-/* Animación Desarollador */
-span#developer {
-  display: inline-block;
-  width: 5rem;
-}
-
-span#developer::before {
-  content: "Python ";
-  animation-name: animate;
-  animation-duration: 4s;
-  animation-iteration-count: 1;
-}
-
-@keyframes animate {
-  0% {
-      content: "R "
-  }
-  9% {
-      content: "Re "
-  }
-  18% {
-      content: "Rea "
-  }
-  27% {
-      content: "Reac "
-  }
-  36% {
-      content: "React "
-  }
-  45% {
-      content: "P ";
-  }
-  54% {
-      content: "Py ";
-  }
-  63% {
-      content: "Pyt ";
-  }
-  72% {
-      content: "Pyth ";
-  }
-  81% {
-      content: "Pytho ";
-  }
-  90% {
-      content: "Python ";
-  }
-}
-
 .text-wrapper {
   position: absolute;
   top: 50%;

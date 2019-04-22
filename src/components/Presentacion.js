@@ -58,7 +58,7 @@ const Presentacion = () => {
     <div className="presentacion">
         <div className="text-wrapper">
         <h1 className="texto-nombre">Leonardo Martinez</h1>
-        <h2>Desarrollador <span id="developer"></span></h2>
+        <h2>Desarrollador <span id="developer">Python</span></h2>
         </div>
     </div>
     </div>
@@ -69,7 +69,7 @@ const Presentacion = () => {
                 <h1>Portafolio de Proyectos</h1>
             </div>
             <div className="trabajos-hechos" id="work-done">
-                {portafolioData.map( dato => <WorkDone dato={dato} />)}
+                {portafolioData.map( (dato, index) => <WorkDone key={index} dato={dato} />)}
             </div>
         </div>
     </div>

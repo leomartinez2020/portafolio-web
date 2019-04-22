@@ -7,8 +7,11 @@ h1, h2 {
 }
 
 blockquote {
+  color: grey;
   font-style: italic;
+  font-size: 1.2em;
   border-left: 3px solid #979797;
+  line-height: 1.5em;
   padding-left: 12px;
 }
 

@@ -108,7 +108,7 @@ a.active {
   }
 }
 
-/**** Blog section CSS **/
-.blog, .contacto {
+/*** Blog, contacto, acerca reset width CSS ***/
+.blog, .contacto, .acerca {
   width: 60%;
 }
